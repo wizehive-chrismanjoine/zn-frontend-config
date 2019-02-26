@@ -3,7 +3,7 @@
 	<select class="form-control" name="{{ field.id }}"
 			ng-model="editing.config[field.id]"
 			ng-required="field.required">
-			<option ng-repeat="item in field.options" ng-disabled="item.disable" ng-selected="{{item.value === editing.config[field.id]}}" value="{{item.value}}">{{item.label}}</option>
+			<option ng-repeat="item in field.options" ng-disabled="item.disable" ng-selected="{{item.value == editing.config[field.id]}}" value="{{item.value}}">{{item.label}}</option>
 	</select>
 
 </script>
