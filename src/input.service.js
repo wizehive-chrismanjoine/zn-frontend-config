@@ -117,11 +117,6 @@ plugin.service('wgnConfigInputs', [function () {
 
 	var checkboxInput = {
 		type: 'checkbox',
-		options: {
-			label: {
-				required: false
-			}
-		},
 		template: 'wgn-config-input-checkbox'
 	};
 
