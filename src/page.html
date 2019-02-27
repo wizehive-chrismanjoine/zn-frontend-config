@@ -7,7 +7,7 @@
 
 			<!-- Other inputs get created dynamically -->
 			<ng-form name="fieldForm" ng-if="field.type !== 'markup'">
-				<label class="form-label" ng-show="field.name">{{ field.name }}</label>
+				<label ng-if="field.type !== 'checkbox'" class="form-label" ng-show="field.name">{{ field.name }}</label>
 
 				<div class="controls">
 					<wgn-config-input definition="field"></wgn-config-input>
