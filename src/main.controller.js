@@ -713,7 +713,7 @@ plugin.controller('wgnConfigCtrl', ['$scope', '$q', '$routeParams', 'znData', 'z
 						if ($scope.editing.config[input.id]) {
 							formatedHighligts.push({
 								type: viewDef.label,
-								value: viewDef.icon
+								value: 'Yes'
 							});
 						}
 						break;
