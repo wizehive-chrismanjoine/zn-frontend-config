@@ -711,10 +711,10 @@ plugin.controller('wgnConfigCtrl', ['$scope', '$q', '$routeParams', 'znData', 'z
 						}
 						break;
 					case 'checkbox':
-						var viewDef = $scope.options.getField(input.id);
+						var checkDef = $scope.options.getField(input.id);
 						if ($scope.editing.config[input.id]) {
 							formatedHighligts.push({
-								type: viewDef.label,
+								type: checkDef.label,
 								value: 'Yes'
 							});
 						}
