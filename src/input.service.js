@@ -115,6 +115,16 @@ plugin.service('wgnConfigInputs', [function () {
 		template: 'wgn-config-input-number'
 	};
 
+	var checkboxInput = {
+		type: 'checkbox',
+		options: {
+			label: {
+				required: false
+			}
+		},
+		template: 'wgn-config-input-checkbox'
+	};
+
 	var textareaInput = {
 		type: 'textarea',
 		template: 'wgn-config-input-textarea'
@@ -202,7 +212,8 @@ plugin.service('wgnConfigInputs', [function () {
 			textareaInput,
 			dropdownInput,
 			markupInput,
-			choiceInput
+			choiceInput,
+			checkboxInput
 		];
 	};
 
