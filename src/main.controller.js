@@ -715,7 +715,7 @@ plugin.controller('wgnConfigCtrl', ['$scope', '$q', '$routeParams', 'znData', 'z
 						if ($scope.editing.config[input.id]) {
 							formatedHighligts.push({
 								type: viewDef.label,
-								value: $scope.editing.config[input.id]
+								value: viewDef.icon
 							});
 						}
 						break;
